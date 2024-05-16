@@ -52,7 +52,7 @@ p {
 
 /******** HEADER STYLES ********/
 /* The widths are in a percentage! */
-header {
+header  {
 	display: flex;
 	justify-content: center;
 	text-align:center;
@@ -94,7 +94,8 @@ header nav ul li {
 	font-weight: 700;
 	text-transform: uppercase;
 	padding: 10px 0;
-	width: 100%
+	width: 100%;
+	margin-right: 8px;
 	
 }
 
@@ -189,4 +190,64 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: .875 rem;
+}
+
+@media all and (min-width: 768px) {
+
+	.bottom-section .content-wrapper {
+		border-top: 5px solid #EEE;
+		border-bottom: 5px solid #EEE;
+		justify-content: space-evenly;
+	}
+	.section-one {
+		width: 33.3%;
+		
+	}
+	
+	.section-two {
+		width: 33.3%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		padding: 0 10px;
+	}
+	
+	.section-three {
+		width: 33.3%;
+		
+	}
+}
+
+@media all and (min-width: 1200px) {
+	body {
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		color: #000000;
+
+		header  {
+			justify-content:space-evenly;
+			text-align:center;	
+		
+		}
+		
+		header h1 {
+			width:79%;
+			padding:;
+			border-bottom: none;
+			text-align: left;
+		}
+		header nav {
+			width: 21%;
+			padding:20px 0;
+		}
+		
+		header nav ul {
+			display: flex;
+			justify-content: space-between;
+			margin: 0;
+			padding: 10px;
+			color:#45610E;
+			list-style: none;
+			
+			
+		}
 }
